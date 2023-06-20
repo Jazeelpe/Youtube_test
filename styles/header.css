@@ -10,12 +10,16 @@
     height: 65px;
     background: white;
     z-index: 100;
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(216, 210, 210);
 }
 .left-head{
     display: flex;
     align-items: center;
     flex-shrink: 0;
     margin-right: 10px;
+    padding-left: 15px;
 }
 .middle-head{
     display: flex;
@@ -101,4 +105,24 @@
     color: white;
     top: -1px;
     right: -1px;
+}
+.toolkit{
+    position: relative;
+}
+.toolkit div{
+    position: absolute;
+    color: white;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding: 4px 8px;
+    bottom: -30px;
+    right: -1px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+.toolkit:hover div{
+    opacity: 1;
 }
